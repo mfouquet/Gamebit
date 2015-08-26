@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">iPhoneSimulator</Platform>
+    <ProductVersion>10.0.0</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{BDD72D69-96E4-4BB5-9F5E-7CBA700BE44A}</ProjectGuid>
+    <ProjectTypeGuids>{6BC8ED88-2882-458C-8E55-DFD12B67127B};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>Gamebit</RootNamespace>
+    <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
+    <ReleaseVersion>3.1</ReleaseVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhoneSimulator' ">
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>False</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>False</ConsolePause>
+    <MtouchDebug>True</MtouchDebug>
+    <MtouchLink>None</MtouchLink>
+    <MtouchArch>ARMv7</MtouchArch>
+    <MtouchI18n>
+    </MtouchI18n>
+    <MtouchSdkVersion>7.0</MtouchSdkVersion>
+    <AssemblyName>Gamebit</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhoneSimulator' ">
+    <DebugType>none</DebugType>
+    <Optimize>True</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>False</ConsolePause>
+    <MtouchLink>None</MtouchLink>
+    <AssemblyName>GamePal</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhone' ">
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>False</Optimize>
+    <OutputPath>bin\iPhone\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>False</ConsolePause>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <MtouchDebug>True</MtouchDebug>
+    <IpaPackageName>
+    </IpaPackageName>
+    <MtouchI18n>
+    </MtouchI18n>
+    <MtouchArch>ARMv7</MtouchArch>
+    <AssemblyName>Gamebit</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhone' ">
+    <DebugType>none</DebugType>
+    <Optimize>True</Optimize>
+    <OutputPath>bin\iPhone\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>False</ConsolePause>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <MtouchUseLlvm>true</MtouchUseLlvm>
+    <IpaPackageName>
+    </IpaPackageName>
+    <MtouchI18n>
+    </MtouchI18n>
+    <MtouchArch>ARMv7</MtouchArch>
+    <AssemblyName>Gamebit</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Ad-Hoc|iPhone' ">
+    <DebugType>none</DebugType>
+    <Optimize>True</Optimize>
+    <OutputPath>bin\iPhone\Ad-Hoc</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>False</ConsolePause>
+    <BuildIpa>True</BuildIpa>
+    <CodesignKey>iPhone Distribution</CodesignKey>
+    <IpaPackageName>
+    </IpaPackageName>
+    <MtouchArch>ARMv7, ARMv7s</MtouchArch>
+    <MtouchI18n>
+    </MtouchI18n>
+    <AssemblyName>Gamebit</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'AppStore|iPhone' ">
+    <DebugType>none</DebugType>
+    <Optimize>True</Optimize>
+    <OutputPath>bin\iPhone\AppStore</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>False</ConsolePause>
+    <CodesignKey>iPhone Distribution</CodesignKey>
+    <MtouchI18n>
+    </MtouchI18n>
+    <MtouchArch>ARMv7, ARMv7s</MtouchArch>
+    <CodesignProvision>1F4D6AFE-3631-461E-B73B-AF9A87AC0285</CodesignProvision>
+    <IpaPackageName>
+    </IpaPackageName>
+    <CrashReportingApiKey>
+    </CrashReportingApiKey>
+    <MtouchUseLlvm>true</MtouchUseLlvm>
+    <AssemblyName>Gamebit</AssemblyName>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="monotouch" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="SDWebImage">
+      <HintPath>..\Components\sdwebimage-3.3\lib\ios\SDWebImage.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\Components\json.net-4.5.11\lib\ios\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Info.plist" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Main.cs" />
+    <Compile Include="AppDelegate.cs" />
+    <Compile Include="DownloadableViewController.cs" />
+    <Compile Include="DownloadableViewController.designer.cs">
+      <DependentUpon>DownloadableViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Game.cs" />
+    <Compile Include="HomeViewController.cs" />
+    <Compile Include="HomeViewController.designer.cs">
+      <DependentUpon>HomeViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReleasesViewController.cs" />
+    <Compile Include="ReleasesViewController.designer.cs">
+      <DependentUpon>ReleasesViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EventsViewController.cs" />
+    <Compile Include="EventsViewController.designer.cs">
+      <DependentUpon>EventsViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GameDetailsTableView.cs" />
+    <Compile Include="GameDetailsTableView.designer.cs">
+      <DependentUpon>GameDetailsTableView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WebViewController.cs" />
+    <Compile Include="WebViewController.designer.cs">
+      <DependentUpon>WebViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SummaryViewController.cs" />
+    <Compile Include="SummaryViewController.designer.cs">
+      <DependentUpon>SummaryViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RootControllers\HomeController.cs" />
+    <Compile Include="RootControllers\HomeController.designer.cs">
+      <DependentUpon>HomeController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RootControllers\Home.cs" />
+    <Compile Include="RootControllers\Home.designer.cs">
+      <DependentUpon>Home.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RootControllers\Releases.cs" />
+    <Compile Include="RootControllers\Releases.designer.cs">
+      <DependentUpon>Releases.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RootControllers\Downloadable.cs" />
+    <Compile Include="RootControllers\Downloadable.designer.cs">
+      <DependentUpon>Downloadable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RootControllers\Events.cs" />
+    <Compile Include="RootControllers\Events.designer.cs">
+      <DependentUpon>Events.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Utilities.cs" />
+    <Compile Include="ScreenshotViewController.cs" />
+    <Compile Include="ScreenshotViewController.designer.cs">
+      <DependentUpon>ScreenshotViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SettingsViewController.cs" />
+    <Compile Include="SettingsViewController.designer.cs">
+      <DependentUpon>SettingsViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RootControllers\Settings.cs" />
+    <Compile Include="RootControllers\Settings.designer.cs">
+      <DependentUpon>Settings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SystemsViewController.cs" />
+    <Compile Include="SystemsViewController.designer.cs">
+      <DependentUpon>SystemsViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdViewController.cs" />
+    <Compile Include="AdViewController.designer.cs">
+      <DependentUpon>AdViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HomeContainerController.cs" />
+    <Compile Include="HomeContainerController.designer.cs">
+      <DependentUpon>HomeContainerController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdManager.cs" />
+    <Compile Include="CustomPaymentObserver.cs" />
+    <Compile Include="ReminderTableViewController.cs" />
+    <Compile Include="ReminderTableViewController.designer.cs">
+      <DependentUpon>ReminderTableViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="App.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <InterfaceDefinition Include="MainStoryboard.storyboard" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\shopping_logo.png" />
+    <BundleResource Include="Resources\settings_ad-icon.png" />
+    <BundleResource Include="Resources\settings_filter-3ds-icon.png" />
+    <BundleResource Include="Resources\settings_filter-icon.png" />
+    <BundleResource Include="Resources\settings_filter-pc-icon.png" />
+    <BundleResource Include="Resources\settings_filter-ps3-icon.png" />
+    <BundleResource Include="Resources\settings_filter-vita-icon.png" />
+    <BundleResource Include="Resources\settings_filter-wiiu-icon.png" />
+    <BundleResource Include="Resources\settings_filter-xb360-icon.png" />
+    <BundleResource Include="Resources\settings_ad_removal_purchased-icon.png" />
+    <BundleResource Include="Resources\settings_native-apps-icon.png" />
+    <BundleResource Include="Resources\maingame_logo.png" />
+    <BundleResource Include="Resources\trailer_logo.png" />
+    <BundleResource Include="Resources\website_logo.png" />
+    <BundleResource Include="Resources\back-button.png" />
+    <BundleResource Include="Resources\web-back.png" />
+    <BundleResource Include="Resources\web-forward.png" />
+    <BundleResource Include="Resources\web-refresh.png" />
+    <BundleResource Include="Resources\screenshots_close.png" />
+    <BundleResource Include="Resources\screenshots_next.png" />
+    <BundleResource Include="Resources\screenshots_post.png" />
+    <BundleResource Include="Resources\screenshots_previous.png" />
+    <BundleResource Include="Resources\screenshots_tweet.png" />
+    <BundleResource Include="Resources\tabbar-downloadables.png" />
+    <BundleResource Include="Resources\tabbar-downloadables%402x.png" />
+    <BundleResource Include="Resources\tabbar-events.png" />
+    <BundleResource Include="Resources\tabbar-events%402x.png" />
+    <BundleResource Include="Resources\tabbar-home.png" />
+    <BundleResource Include="Resources\tabbar-home%402x.png" />
+    <BundleResource Include="Resources\tabbar-releases.png" />
+    <BundleResource Include="Resources\tabbar-releases%402x.png" />
+    <BundleResource Include="Resources\tabbar-settings.png" />
+    <BundleResource Include="Resources\tabbar-settings%402x.png" />
+    <BundleResource Include="Resources\navbar-action.png" />
+    <BundleResource Include="Resources\navbar-close.png" />
+    <BundleResource Include="Resources\navbar-search.png" />
+    <BundleResource Include="Resources\credits-logo.png" />
+    <BundleResource Include="Resources\tableview-error.png" />
+    <BundleResource Include="Resources\placeholder_image.png" />
+    <BundleResource Include="Resources\settings_filter-ps4-icon.png" />
+    <BundleResource Include="Resources\ad-removal-banner.png" />
+    <BundleResource Include="Resources\settings_filter-xbone-icon.png" />
+    <BundleResource Include="Resources\navbar-background.png" />
+    <BundleResource Include="Resources\searchbar-background.png" />
+    <BundleResource Include="Resources\navbar-info.png" />
+    <BundleResource Include="Resources\background-overlay.png" />
+    <BundleResource Include="Resources\navbar-homelogo.png" />
+    <BundleResource Include="Resources\e.png" />
+    <BundleResource Include="Resources\e10+.png" />
+    <BundleResource Include="Resources\ec.png" />
+    <BundleResource Include="Resources\m.png" />
+    <BundleResource Include="Resources\rp.png" />
+    <BundleResource Include="Resources\t.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <Folder Include="RootControllers\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ITunesArtwork Include="iTunesArtwork" />
+    <ITunesArtwork Include="iTunesArtwork%402x" />
+  </ItemGroup>
+  <ItemGroup>
+    <XamarinComponentReference Include="json.net">
+      <Version>4.5.11</Version>
+      <Visible>False</Visible>
+    </XamarinComponentReference>
+    <XamarinComponentReference Include="sdwebimage">
+      <Version>3.3</Version>
+      <Visible>False</Visible>
+    </XamarinComponentReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ImageAsset Include="Images.xcassets\AppIcons.appiconset\Contents.json" />
+    <ImageAsset Include="Images.xcassets\LaunchImages.launchimage\Contents.json" />
+    <ImageAsset Include="Images.xcassets\LaunchImages.launchimage\Default%402x.png" />
+    <ImageAsset Include="Images.xcassets\LaunchImages.launchimage\Default-568h%402x.png" />
+    <ImageAsset Include="Images.xcassets\AppIcons.appiconset\29_icon.png" />
+    <ImageAsset Include="Images.xcassets\AppIcons.appiconset\58_icon.png" />
+    <ImageAsset Include="Images.xcassets\AppIcons.appiconset\120_icon.png" />
+    <ImageAsset Include="Images.xcassets\AppIcons.appiconset\80_icon.png" />
+    <ImageAsset Include="Images.xcassets\AppIcons.appiconset\40_icon.png" />
+    <ImageAsset Include="Images.xcassets\AppIcons.appiconset\76_icon.png" />
+    <ImageAsset Include="Images.xcassets\AppIcons.appiconset\152_icon.png" />
+  </ItemGroup>
+</Project>

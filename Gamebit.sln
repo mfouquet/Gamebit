@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gamebit", "Gamebit\Gamebit.csproj", "{BDD72D69-96E4-4BB5-9F5E-7CBA700BE44A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|iPhoneSimulator = Debug|iPhoneSimulator
+		Release|iPhoneSimulator = Release|iPhoneSimulator
+		Debug|iPhone = Debug|iPhone
+		Release|iPhone = Release|iPhone
+		Ad-Hoc|iPhone = Ad-Hoc|iPhone
+		AppStore|iPhone = AppStore|iPhone
+		AdHoc|iPhone = AdHoc|iPhone
+		AdHoc|iPhoneSimulator = AdHoc|iPhoneSimulator
+		AppStore|iPhoneSimulator = AppStore|iPhoneSimulator
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BDD72D69-96E4-4BB5-9F5E-7CBA700BE44A}.Ad-Hoc|iPhone.ActiveCfg = Ad-Hoc|iPhone
+		{BDD72D69-96E4-4BB5-9F5E-7CBA700BE44A}.Ad-Hoc|iPhone.Build.0 = Ad-Hoc|iPhone
+		{BDD72D69-96E4-4BB5-9F5E-7CBA700BE44A}.AppStore|iPhone.ActiveCfg = AppStore|iPhone
+		{BDD72D69-96E4-4BB5-9F5E-7CBA700BE44A}.AppStore|iPhone.Build.0 = AppStore|iPhone
+		{BDD72D69-96E4-4BB5-9F5E-7CBA700BE44A}.Debug|iPhone.ActiveCfg = Debug|iPhone
+		{BDD72D69-96E4-4BB5-9F5E-7CBA700BE44A}.Debug|iPhone.Build.0 = Debug|iPhone
+		{BDD72D69-96E4-4BB5-9F5E-7CBA700BE44A}.Debug|iPhoneSimulator.ActiveCfg = Debug|iPhoneSimulator
+		{BDD72D69-96E4-4BB5-9F5E-7CBA700BE44A}.Debug|iPhoneSimulator.Build.0 = Debug|iPhoneSimulator
+		{BDD72D69-96E4-4BB5-9F5E-7CBA700BE44A}.Release|iPhone.ActiveCfg = Release|iPhone
+		{BDD72D69-96E4-4BB5-9F5E-7CBA700BE44A}.Release|iPhone.Build.0 = Release|iPhone
+		{BDD72D69-96E4-4BB5-9F5E-7CBA700BE44A}.Release|iPhoneSimulator.ActiveCfg = Release|iPhoneSimulator
+		{BDD72D69-96E4-4BB5-9F5E-7CBA700BE44A}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = Gamebit\Gamebit.csproj
+		Policies = $0
+		$0.DotNetNamingPolicy = $1
+		$1.DirectoryNamespaceAssociation = None
+		$1.ResourceNamePolicy = FileFormatDefault
+		$0.TextStylePolicy = $2
+		$2.inheritsSet = null
+		$2.scope = text/x-csharp
+		$0.CSharpFormattingPolicy = $3
+		$3.AfterDelegateDeclarationParameterComma = True
+		$3.inheritsSet = Mono
+		$3.inheritsScope = text/x-csharp
+		$3.scope = text/x-csharp
+		$0.VersionControlPolicy = $4
+		$4.inheritsSet = Mono
+		$0.ChangeLogPolicy = $5
+		$5.UpdateMode = None
+		$5.MessageStyle = $6
+		$6.LineAlign = 0
+		$5.inheritsSet = Mono
+		version = 3.1
+	EndGlobalSection
+EndGlobal
